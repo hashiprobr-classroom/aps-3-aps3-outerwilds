@@ -38,6 +38,11 @@ public class CentralTest {
         Corrida c3 = mock(Corrida.class);
         Corrida c4 = mock(Corrida.class);
 
+        central.adiciona(c1);
+        central.adiciona(c2);
+        central.adiciona(c3);
+        central.adiciona(c4);
+
 
     }
 }
