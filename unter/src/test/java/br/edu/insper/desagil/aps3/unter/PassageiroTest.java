@@ -33,30 +33,27 @@ public class PassageiroTest {
 
     @Test
     void avalia() {
-        Corrida c = mock(Corrida.class);
 
+        Corrida c = new Corrida(p, new Motorista("222.222.222-22", "Vitor"));
         p.avalia(c, 3);
-        when(c.getNotaMotorista()).thenReturn(3);
 
         assertEquals(3, c.getNotaMotorista());
     }
 
     @Test
     void avaliaBaixo() {
-        Corrida c = mock(Corrida.class);
 
+        Corrida c = new Corrida(p, new Motorista("222.222.222-22", "Vitor"));
         p.avalia(c, 0);
-        when(c.getNotaMotorista()).thenReturn(1);
 
         assertEquals(1, c.getNotaMotorista());
     }
 
     @Test
     void avaliaAlto() {
-        Corrida c = mock(Corrida.class);
+        Corrida c = new Corrida(p, new Motorista("222.222.222-22", "Vitor"));
 
         p.avalia(c, 6);
-        when(c.getNotaMotorista()).thenReturn(5);
 
         assertEquals(5, c.getNotaMotorista());
     }
