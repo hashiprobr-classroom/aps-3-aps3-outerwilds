@@ -32,6 +32,6 @@ public class Central {
     }
 
     public double mediaMotorista(String cpf) {
-
+        return 0.0;
     }
 }
