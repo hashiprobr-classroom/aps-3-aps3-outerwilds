@@ -30,13 +30,15 @@ public class Corrida {
     }
 
     private int truncaNota(int nota) {
-        if (nota > 5) {
-            return 5;
-        } else if (nota < 1) {
-            return 1;
-        } else {
-            return nota;
+
+        if (nota != 0) {
+            if (nota > 5) {
+                return 5;
+            } else if (nota < 1) {
+                return 1;
+            }
         }
+        return nota;
     }
 
     public void avaliaPassageiro(int nota) {

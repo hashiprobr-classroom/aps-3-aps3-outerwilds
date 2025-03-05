@@ -22,7 +22,7 @@ public class Central {
         for (Corrida corrida : corridas) {
             Passageiro p = corrida.getPassageiro();
 
-            if (p.getCpf().equals(cpf)) {
+            if (p.getCpf().equals(cpf) && corrida.getNotaPassageiro() != 0) {
                 soma += corrida.getNotaPassageiro();
                 total++;
             }

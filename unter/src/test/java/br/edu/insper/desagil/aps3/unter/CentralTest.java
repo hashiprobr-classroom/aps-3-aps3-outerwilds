@@ -32,7 +32,7 @@ public class CentralTest {
     void avaliacoesPassageiro() {
 
         Passageiro daniel = new Passageiro(cpfPassageiro, "Daniel");
-        Passageiro lorenzo = mock(Passageiro.class);
+        Passageiro lorenzo = new Passageiro("333.333.333-33", "Lorenzo");
         Motorista motorista = mock(Motorista.class);
 
         Corrida c1 = new Corrida (daniel, motorista);
