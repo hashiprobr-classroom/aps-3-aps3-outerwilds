@@ -27,11 +27,34 @@ public class Central {
                 total++;
             }
         }
-        return soma / total;
+
+        if (total > 0) {
+            return soma / total;
+        } else {
+            return 0.0;
+        }
+
 
     }
 
     public double mediaMotorista(String cpf) {
-        return 0.0;
+        double soma = 0.0;
+        int total = 0; // Quantidade de corridas que o passageiro em questão fez
+
+        for (Corrida corrida : corridas) {
+            Motorista m = corrida.getMotorista();
+
+            if (m.getCpf().equals(cpf)) {
+                soma += corrida.getNotaMotorista();
+                total++;
+            }
+        }
+
+        if (total > 0) {
+            return soma / total;
+        } else {
+            return 0.0;
+        }
+
     }
 }
