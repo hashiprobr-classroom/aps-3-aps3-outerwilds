@@ -48,7 +48,7 @@ public class MotoristaTest {
 
         m.avalia(c, 0);
 
-        assertEquals(1, c.getNotaPassageiro());
+        assertEquals(0, c.getNotaPassageiro());
     }
 
     @Test

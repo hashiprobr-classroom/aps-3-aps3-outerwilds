@@ -46,7 +46,7 @@ public class PassageiroTest {
         Corrida c = new Corrida(p, new Motorista("222.222.222-22", "Vitor"));
         p.avalia(c, 0);
 
-        assertEquals(1, c.getNotaMotorista());
+        assertEquals(0, c.getNotaMotorista());
     }
 
     @Test
